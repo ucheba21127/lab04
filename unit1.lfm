@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 203
+  Height = 350
+  Top = 434
+  Width = 571
+  Caption = 'Form1'
+  ClientHeight = 350
+  ClientWidth = 571
+  OnCreate = FormCreate
+  LCLVersion = '2.0.0.4'
+  object dgPole: TDrawGrid
+    Left = 32
+    Height = 250
+    Top = 40
+    Width = 250
+    ColCount = 12
+    DefaultColWidth = 20
+    DefaultDrawing = False
+    DefaultRowHeight = 20
+    ExtendedSelect = False
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 12
+    TabOrder = 0
+    OnClick = dgPoleClick
+    OnDrawCell = dgPoleDrawCell
+    OnMouseDown = dgPoleMouseDown
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'НОВЫЙ'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 88
+    Height = 25
+    Top = 0
+    Width = 88
+    Caption = 'НАЙТИ ПУТЬ'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object sbDif: TScrollBar
+    Left = 16
+    Height = 17
+    Top = 304
+    Width = 250
+    PageSize = 0
+    TabOrder = 3
+    OnChange = sbDifChange
+  end
+  object lblDif: TLabel
+    Left = 296
+    Height = 15
+    Top = 304
+    Width = 28
+    Caption = 'lblDif'
+    ParentColor = False
+  end
+  object Button3: TButton
+    Left = 184
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'СОХРАНИТЬ'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Memo1: TMemo
+    Left = 392
+    Height = 90
+    Top = 8
+    Width = 150
+    OnChange = Memo1Change
+    TabOrder = 5
+  end
+  object Memo2: TMemo
+    Left = 392
+    Height = 90
+    Top = 128
+    Width = 150
+    OnChange = Memo1Change
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 280
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'ОТКРЫТЬ'
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 396
+    Height = 15
+    Top = 242
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object SaveDialog1: TSaveDialog
+    left = 448
+    top = 272
+  end
+  object OpenDialog1: TOpenDialog
+    left = 496
+    top = 272
+  end
+end
